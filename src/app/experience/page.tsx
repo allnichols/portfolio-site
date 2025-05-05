@@ -1,3 +1,9 @@
+import Container from "@/app/ui/Container";
+
 export default function Page() {
-  return <p>Experience Page</p>;
+  return (
+    <Container>
+      <p>Experience Page</p>
+    </Container>
+  );
 }

@@ -1,14 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
-import NavBar from "./ui/NavBar";
+import Container from "./ui/Container";
 import { signika, poppins, oxygen } from "./ui/fonts";
 
 export default function Home() {
   return (
-    <div className="p-[24px]">
-      {/* <NavBar /> */}
-
-      {/* Header */}
+    <Container>
       <header>
         <div>
           <h1 className={`${poppins.className} font-semibold text-[38px]`}>
@@ -26,8 +21,7 @@ export default function Home() {
           </p>
         </div>
       </header>
-      <div></div>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
-    </div>
+    </Container>
   );
 }
