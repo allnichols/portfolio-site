@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavBar from "./ui/NavBar";
-import { signika, poppins } from "./ui/fonts";
+import { signika, poppins, oxygen } from "./ui/fonts";
 
 export default function Home() {
   return (
@@ -11,11 +11,15 @@ export default function Home() {
       {/* Header */}
       <header>
         <div>
-          <h1 className={`${poppins.className} text-[38px]`}>Max Nichols</h1>
-          <h2 className={`${signika.className} text-[24px] mt-[.55rem]`}>
+          <h1 className={`${poppins.className} font-semibold text-[38px]`}>
+            Max Nichols
+          </h1>
+          <h2 className={`${signika.className} font-medium text-[24px]`}>
             Front End Engineer
           </h2>
-          <p className="text-[16px] mt-[.55rem]">
+          <p
+            className={`${oxygen.className} font-medium text-[16px] mt-[16px]`}
+          >
             I am a front-end engineer with a passion for building beautiful and
             functional user interfaces. I have experience with React, Next.js,
             and Tailwind CSS.
