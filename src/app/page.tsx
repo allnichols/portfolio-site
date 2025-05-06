@@ -10,12 +10,12 @@ export default function Home() {
             <div className="hero-content lg:w-[60%] text-center">
               <div>
                 <h1
-                  className={`${signika.className} text-[24px] lg:mb-5 lg:text-[42px]`}
+                  className={`${signika.className} text-[24px] md:mb-3 lg:mb-5 lg:text-[42px]`}
                 >
                   Hello, I'm Max
                 </h1>
                 <h1
-                  className={`${poppins.className} font-bold text-[48px] leading-[56px] lg:text-[85px] lg:font-bold lg:mb-10`}
+                  className={`${poppins.className} font-bold text-[48px] leading-[50px] md:leading-[75px] lg:text-[85px] lg:font-bold lg:mb-10`}
                 >
                   Front End Engineer
                 </h1>
