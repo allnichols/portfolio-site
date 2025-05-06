@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const Links = [
   { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
   { href: "/experience", label: "Experience" },
+  { href: "/projects", label: "Projects" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -19,7 +19,7 @@ export default function NavBar() {
             <li key={link.label}>
               <Link
                 href={link.href}
-                className="text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400"
+                className="text-sm text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400"
               >
                 {link.label}
               </Link>
