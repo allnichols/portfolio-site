@@ -9,7 +9,7 @@ const Links = [
 
 export default function NavBar() {
   return (
-    <nav className="fixed bottom-0 left-0 w-full gb-white md:static md:border-none md:bg-transparent sm:border-t-1 sm:border-t-gray-300 sm:border-t-solid">
+    <nav className="fixed bottom-0 z-1 left-0 w-full bg-white md:static md:border-none sm:border-t-1 sm:border-t-gray-300 sm:border-t-solid">
       <div className="md:flex md:justify-between p-4 md:p-0">
         <div className="text-lg font-bold hidden md:block md:mr-8">
           <Link href="/">MN</Link>
