@@ -65,7 +65,7 @@ export default function Page() {
         <div className="hero-content text-left">
           <div>
             {Experiences.map((experience, index) => (
-              <div key={index} className="mb-4 p-4 shadow-xs">
+              <div key={experience.company} className="mb-4 p-4 shadow-xs">
                 <div>
                   <p>{experience.date}</p>
                 </div>
