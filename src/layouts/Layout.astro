@@ -3,24 +3,48 @@ import './src/styles/global.css';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Max Nichols | Front End Engineer</title>
 	</head>
 	<body>
+		<div
+			style="
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 1rem;
+				max-width: 1200px;
+				margin: 0 auto;
+			"
+		>
+			<div class="navbar bg-base-100 shadow-sm">
+				<div class="flex-1">
+					<a class="btn btn-ghost text-xl" href="/">MN</a>
+				</div>
+				<div class="flex-none">
+					<ul class="menu menu-horizontal px-1">
+						<li><a href="/experience">Experience</a></li>
+						<li><a href="/projects">Projects</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
 		<slot />
 	</body>
 </html>
 
-<style>
+<!-- <style>
 	html,
 	body {
 		margin: 0;
 		width: 100%;
 		height: 100%;
 	}
-</style>
+</style> -->
