@@ -1,11 +1,26 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <div class="container">
+    <main>
+      <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-2xl font-bold">Hello, I'm Max</h1>
+            <h1 class="text-4xl font-bold leading-15 pb-5">
+              Front End Engineer
+            </h1>
+            <h3 class="pb-6 text-lg">
+              I'm a front-end engineer with a passion for building beautiful and
+              functional user interfaces. I have experience with React, Node.js,
+              Next.js, and Tailwind CSS.
+            </h3>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
 </Layout>
