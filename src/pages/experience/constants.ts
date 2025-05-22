@@ -1,7 +1,4 @@
----
-import Layout from "../layouts/Layout.astro";
-
-const Experiences = [
+export const Experiences = [
   {
     title: "Front End Engineer",
     company: "Acuity Inc",
@@ -48,36 +45,3 @@ const Experiences = [
     ],
   },
 ];
----
-
-<Layout>
-  <div class="flex flex-col items-center justify-center">
-    <h1 class="text-4xl font-bold mb-4 mt-2">Experience</h1>
-    {
-      Experiences.map((item) => {
-        return (
-          <div class="mb-4 p-4 shadow-xs">
-            <div>
-              <p>{item.date}</p>
-            </div>
-            <div class="mb-2">
-              <h3 class="text-lg font-bold mb-2">
-                {item.title}, {item.company}
-              </h3>
-              <p class="">{item.description}</p>
-              <div class="flex flex-wrap gap-2 mt-5">
-                {item.techUsed.map((tech) => {
-                  return (
-                    <span class="badge badge-outline badge-accent badge-sm">
-                      {tech}
-                    </span>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        );
-      })
-    }
-  </div>
-</Layout>
