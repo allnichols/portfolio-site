@@ -1,10 +1,33 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { Projects } from "./constants";
 ---
 
 <Layout>
-  <div class="flex flex-col items-center justify-center h-screen">
-    <h1 class="text-4xl font-bold mb-4">Projects</h1>
-    <p class="text-lg">This is the projects page.</p>
+  <div class="flex flex-col items-center justify-center mb-10">
+    <h1 class="text-4xl font-bold mb-4 mt-2">Projects</h1>
+    {
+      Projects.map((item) => {
+        return (
+          <div class="mb-4 p-4">
+            <img src={item.image} alt={item.name} class="rounded-md" />
+
+            <div class="mb-2">
+              <h3 class="text-lg font-bold mb-2">{item.name}</h3>
+              <p class="">{item.description}</p>
+              <div class="flex flex-wrap gap-2 mt-5">
+                {item.tech.map((tech) => {
+                  return (
+                    <span class="badge badge-outline badge-accent badge-sm p-3">
+                      {tech}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        );
+      })
+    }
   </div>
 </Layout>
