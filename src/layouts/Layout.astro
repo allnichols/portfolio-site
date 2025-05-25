@@ -1,5 +1,5 @@
 ---
-import { ClientRouter } from "astro:transitions";
+import { ClientRouter, slide } from "astro:transitions";
 import Dock from "../components/dock.astro";
 import "./src/styles/global.css";
 ---
@@ -37,7 +37,7 @@ import "./src/styles/global.css";
       </div>
     </div>
 
-    <main transition:animate="slide" transition:name="main">
+    <main transition:animate={slide({ duration: 600 })}>
       <slot />
     </main>
 
