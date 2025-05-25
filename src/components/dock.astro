@@ -91,3 +91,30 @@ const currentPath = pathname.slice(1);
     <span class="dock-label">Projects</span>
   </a>
 </div>
+
+<script>
+  // only want this to run once so not wrapping it in an event listener to catch astro:page-load
+  const dockEls = document.querySelectorAll(".dock a");
+  dockEls.forEach((el, i) => {
+    const htmlEl = el as HTMLElement;
+    htmlEl.style.opacity = "0";
+    htmlEl.style.transform = "translateY(20px)";
+    setTimeout(() => {
+      htmlEl.style.transition =
+        "opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1)";
+      htmlEl.style.opacity = "1";
+      htmlEl.style.transform = "translateY(0)";
+    }, i * 200);
+  });
+
+  document.addEventListener("astro:page-load", () => {
+    const dockEls = document.querySelectorAll(".dock a");
+    dockEls.forEach((el) => {
+      el.addEventListener("click", (e) => {
+        if (el.classList.contains("dock-active")) {
+          e.preventDefault();
+        }
+      });
+    });
+  });
+</script>
