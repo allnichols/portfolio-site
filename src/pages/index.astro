@@ -31,8 +31,8 @@ import Layout from "../layouts/Layout.astro";
   </div>
 </Layout>
 <script>
+  // refactor to just use css since it's on load
   document.addEventListener("astro:page-load", () => {
-    console.log("astro:page-load event triggered");
     const fadeInEls = document.querySelectorAll(".fade-in");
     fadeInEls.forEach((el, i) => {
       const htmlEl = el as HTMLElement;
