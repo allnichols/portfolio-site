@@ -12,6 +12,7 @@ export const Projects = [
       "Spring Boot",
       "PostgreSQL",
     ],
+    slug: "school-management-system",
   },
   {
     name: "SpaceGrid",
@@ -19,5 +20,6 @@ export const Projects = [
     description:
       "A web application for space enthusiasts to explore real-time satellite data, and track orbits.",
     tech: ["React", "Typescript", "Tailwind CSS", "Shadcn", "Next.js"],
+    slug: "spacegrid",
   },
 ];
