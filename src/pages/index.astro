@@ -8,20 +8,25 @@ import Layout from "../layouts/Layout.astro";
       <div class="hero-content text-center">
         <div class="max-w-md">
           <h1 class="text-2xl font-bold fade-in">Hello, I'm Max</h1>
-          <h1 class="text-4xl font-bold leading-15 pb-5 fade-in">
+          <h1
+            class="text-4xl font-bold leading-15 pb-5 fade-in fade-in-delay-2"
+          >
             Front End Engineer
           </h1>
-          <h3 class="mb-8 text-lg fade-in">
+          <h3 class="mb-8 text-lg fade-in fade-in-delay-2">
             I'm a front-end engineer with a passion for building beautiful and
             functional user interfaces. I have experience with React, Node.js,
             Next.js, and Tailwind CSS.
           </h3>
-          <a href="/projects" class="btn btn-primary btn-lg fade-in">
+          <a
+            href="/projects"
+            class="btn btn-primary btn-lg fade-in fade-in-delay-3"
+          >
             Projects
           </a>
           <a
             href="/experience"
-            class="btn btn-outline btn-accent ml-4 btn-lg fade-in"
+            class="btn btn-outline btn-accent ml-4 btn-lg fade-in fade-in-delay-3"
           >
             Resume
           </a>
@@ -32,18 +37,18 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 <script>
   // refactor to just use css since it's on load
-  document.addEventListener("astro:page-load", () => {
-    const fadeInEls = document.querySelectorAll(".fade-in");
-    fadeInEls.forEach((el, i) => {
-      const htmlEl = el as HTMLElement;
-      htmlEl.style.opacity = "0";
-      htmlEl.style.transform = "translateY(20px)";
-      setTimeout(() => {
-        htmlEl.style.transition =
-          "opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1)";
-        htmlEl.style.opacity = "1";
-        htmlEl.style.transform = "translateY(0)";
-      }, i * 200);
-    });
-  });
+  // document.addEventListener("astro:page-load", () => {
+  //   const fadeInEls = document.querySelectorAll(".fade-in");
+  //   fadeInEls.forEach((el, i) => {
+  //     const htmlEl = el as HTMLElement;
+  //     htmlEl.style.opacity = "0";
+  //     htmlEl.style.transform = "translateY(20px)";
+  //     setTimeout(() => {
+  //       htmlEl.style.transition =
+  //         "opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1)";
+  //       htmlEl.style.opacity = "1";
+  //       htmlEl.style.transform = "translateY(0)";
+  //     }, i * 200);
+  //   });
+  // });
 </script>
