@@ -7,9 +7,12 @@ import { Projects } from "./constants";
   <div class="flex flex-col items-center justify-center mb-10">
     <h1 class="text-4xl font-bold mb-4 mt-2">Projects</h1>
     {
-      Projects.map((item) => {
+      Projects.map((item, i) => {
         return (
-          <div class="mb-4 p-4 fade-in">
+          <div
+            class="mb-4 p-4 fade-in"
+            style={`animation-delay: ${i * 200}ms;`}
+          >
             {/* <img src={item.image} alt={item.name} class="rounded-md" /> */}
 
             <div class="mb-2">

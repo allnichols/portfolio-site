@@ -21,14 +21,14 @@
 }
 
 .fade-in-delay {
-  animation-delay: 0.2s;
+  animation-delay: 200ms;
 }
 .fade-in-delay-2 {
-  animation-delay: 0.4s;
+  animation-delay: 400ms;
 }
 .fade-in-delay-3 {
-  animation-delay: 0.6s;
+  animation-delay: 600ms;
 }
 .fade-in-delay-4 {
-  animation-delay: 0.8s;
+  animation-delay: 800ms;
 }
