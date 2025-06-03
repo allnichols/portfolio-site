@@ -1,6 +1,7 @@
 ---
  title: "School Management System"
  slug: "school-management-system"
+ image: "https://picsum.photos/id/8/200/150"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
