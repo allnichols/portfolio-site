@@ -1,8 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import fs from "fs";
-import path from "path";
 import type { CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
@@ -25,7 +23,7 @@ const { project }: Project = Astro.props;
 
 <Layout>
   <article
-    class="prose mx-auto"
+    class="flex flex-col items-center justify-center p-4"
     transition:name={`project-${project.data.slug}`}
   >
     <h1 class="text-4xl font-bold mb-4 mt-2">{project.data.title}</h1>

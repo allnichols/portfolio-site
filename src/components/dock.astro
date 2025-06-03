@@ -3,7 +3,7 @@ const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1);
 ---
 
-<div class="dock">
+<div class="dock md:hidden">
   <a href="/" class={currentPath === "" ? "dock-active" : ""}>
     <svg
       class="size-[1.2em]"

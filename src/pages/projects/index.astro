@@ -5,7 +5,7 @@ import { Projects } from "./constants";
 
 <Layout>
   <div class="flex flex-col items-center justify-center mb-10">
-    <h1 class="text-4xl font-bold mb-4 mt-2">Projects</h1>
+    <h1 class="text-4xl font-bold mb-4 mt-6">Projects</h1>
     {
       Projects.map((item, i) => {
         return (
@@ -13,14 +13,9 @@ import { Projects } from "./constants";
             class="mb-4 p-4 fade-in"
             style={`animation-delay: ${i * 200}ms;`}
           >
-            <div class="mb-2">
+            <div class="mb-2" transition:name={`project-${item.slug}`}>
               <a href={`/projects/${item.slug}`}>
-                <h3
-                  class="text-lg font-bold mb-2"
-                  transition:name={`project-${item.slug}`}
-                >
-                  {item.name}
-                </h3>
+                <h3 class="text-lg font-bold mb-2">{item.name}</h3>
               </a>
               <p class="">{item.description}</p>
               <div class="flex flex-wrap gap-2 mt-5">
