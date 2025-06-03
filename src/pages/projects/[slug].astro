@@ -24,7 +24,10 @@ const { project }: Project = Astro.props;
 ---
 
 <Layout>
-  <article class="prose mx-auto">
+  <article
+    class="prose mx-auto"
+    transition:name={`project-${project.data.slug}`}
+  >
     <h1 class="text-4xl font-bold mb-4 mt-2">{project.data.title}</h1>
     <p>{project.body}</p>
   </article>

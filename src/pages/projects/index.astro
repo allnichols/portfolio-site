@@ -15,7 +15,8 @@ import { Projects } from "./constants";
           >
             {/* <img src={item.image} alt={item.name} class="rounded-md" /> */}
 
-            <div class="mb-2">
+            <div class="mb-2" transition:name={`project-${item.slug}`}>
+              <img src={item.image} alt={item.name} class="rounded-md mb-2" />
               <a href={`/projects/${item.slug}`}>
                 <h3 class="text-lg font-bold mb-2">{item.name}</h3>
               </a>
