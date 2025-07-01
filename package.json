@@ -11,7 +11,7 @@
   "dependencies": {
     "@astrojs/mdx": "^4.3.0",
     "@tailwindcss/vite": "^4.1.7",
-    "astro": "^5.7.13",
+    "astro": "^5.10.1",
     "daisyui": "^5.0.35",
     "portfolio-site": "file:",
     "tailwindcss": "^4.1.7"

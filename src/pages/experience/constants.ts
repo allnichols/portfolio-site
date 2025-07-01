@@ -2,7 +2,7 @@ export const Experiences = [
   {
     title: "Front End Engineer",
     company: "Acuity Inc",
-    date: "Jan 2023 - Present",
+    date: "Jan 2023 - May 2025",
     description: `Spearheaded front-end development for a secure file management app aiding criminal investigations, reducing cartel case timelines by 3–6 months. Built responsive UI with Storybook, GraphQL, and Apollo Client, collaborating with cross-functional teams in an agile environment.`,
     techUsed: [
       "React",
