@@ -1,6 +1,14 @@
 ---
  title: "School Management System"
  slug: "school-management-system"
+ tech: [
+      "React",
+      "Typescript",
+      "Tailwind CSS",
+      "Shadcn",
+      "Spring Boot",
+      "PostgreSQL",
+    ]
  image: "https://picsum.photos/id/8/200/150"
 ---
 

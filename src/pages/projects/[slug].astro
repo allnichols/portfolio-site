@@ -6,10 +6,9 @@ import type { CollectionEntry } from "astro:content";
 export async function getStaticPaths() {
   const projects = await getCollection("projects");
   return projects.map((project) => {
-    console.log(`Generating path for project: ${project.data.slug}`);
     return {
       params: { slug: project.data.slug },
-      props: { project },
+      props: { project, tech: project.data.tech || [] },
     };
   });
 }
@@ -27,6 +26,22 @@ const { project }: Project = Astro.props;
     transition:name={`project-${project.data.slug}`}
   >
     <h1 class="text-4xl font-bold mb-4 mt-2">{project.data.title}</h1>
+  <div class="mb-4">
+      {project.data.tech && project.data.tech.length > 0 ? (
+        <div class="flex flex-wrap gap-2">
+          {project.data.tech.map((tech) => (
+            <span class="badge badge-outline badge-accent badge-sm">
+              {tech}
+            </span>
+          ))}
+        </div>
+      ) : (
+        <p class="text-sm text-gray-500">No technologies listed.</p>
+      )}
+    </div>
+  <div class="max-w-2xl w-full prose prose-lg prose-slate">
     <p>{project.body}</p>
+
+  </div>
   </article>
 </Layout>
