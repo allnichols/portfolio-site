@@ -1,29 +1,19 @@
 {
   "name": "portfolio-site",
-  "version": "0.1.0",
-  "private": true,
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "next": "15.3.1",
-    "portfolio-site": "file:",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@astrojs/mdx": "^4.3.0",
+    "@tailwindcss/vite": "^4.1.7",
+    "astro": "^5.10.1",
     "daisyui": "^5.0.35",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.1",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "portfolio-site": "file:",
+    "tailwindcss": "^4.1.7"
   }
 }

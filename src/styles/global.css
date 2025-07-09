@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: dark --default;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(15%);
+  animation: 1s fade-in forwards;
+}
+
+.fade-in-delay {
+  animation-delay: 200ms;
+}
+.fade-in-delay-2 {
+  animation-delay: 400ms;
+}
+.fade-in-delay-3 {
+  animation-delay: 600ms;
+}
+.fade-in-delay-4 {
+  animation-delay: 800ms;
+}
