@@ -3,32 +3,33 @@
   themes: dark --default;
 }
 
-@keyframes fade-in {
-  0% {
-    transform: translateY(25%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* or whatever max width you prefer */
+  margin: 0 auto;
+  padding: 0 1rem; /* 16px on mobile */
+}
+
+/* Responsive padding */
+@media (min-width: 640px) {
+  .container {
+    padding: 0 2rem; /* 32px on tablet and up */
   }
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(15%);
-  animation: 1s fade-in forwards;
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 3rem; /* 48px on desktop */
+  }
 }
 
-.fade-in-delay {
-  animation-delay: 200ms;
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 4rem; /* 64px on large screens */
+  }
 }
-.fade-in-delay-2 {
-  animation-delay: 400ms;
-}
-.fade-in-delay-3 {
-  animation-delay: 600ms;
-}
-.fade-in-delay-4 {
-  animation-delay: 800ms;
-}
+
