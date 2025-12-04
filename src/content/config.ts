@@ -10,6 +10,7 @@ const projectsCollection = defineCollection({
     live: z.string().optional(),
     slug: z.string(),
     tech: z.array(z.string()).optional(),
+    description: z.string().optional(),
   }),
 });
 
