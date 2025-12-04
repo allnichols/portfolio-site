@@ -9,9 +9,9 @@ html {
 
 .container {
   width: 100%;
-  max-width: 1200px; /* or whatever max width you prefer */
-  margin: 0 auto;
-  padding: 0 1rem; /* 16px on mobile */
+  max-width: 1200px; 
+  margin-inline: auto;
+  padding: 0 1rem;
 }
 
 /* Responsive padding */

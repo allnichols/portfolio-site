@@ -1,0 +1,39 @@
+---
+const skills = ['JavaScript', 'TypeScript', 'React', 'Node.js', 'SQL', 'Postgres'];
+---
+
+<div class="hero min-h-screen">
+    <div class="hero-content text-center pt-0">
+      <div class="max-w-lg">
+        <h1 class="text-2xl font-semi-bold fade-in fade-in-delay">Hello, I'm Max</h1>
+        <h1 class="text-6xl pb-5">Front End Engineer</h1>
+        <div class="card">
+          <div class="card-body">
+            <div class="card-actions justify-center">
+                {skills.map(skill => {
+                    return <div class="badge badge-outline badge-info">{skill}</div>
+                })}
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-md mt-8"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-download-icon lucide-download"
+            ><path d="M12 15V3"></path><path
+              d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path
+              d="m7 10 5 5 5-5"></path></svg
+          > Download Resume
+        </button>
+      </div>
+    </div>
+  </div>
