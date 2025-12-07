@@ -10,14 +10,14 @@ const experience = [
     date: "Jan 2022 - Dec 2022",
     title: "Senior Full Stack Developer",
     place: "Capgemini",
-    description: `Built a serverless email notification system with Node.js and Amazon SES for scalable automation. Improved reliability and user experience by redesigning Yum! Brands’ password reset workflow for tens of thousands of employees. Migrated a legacy Angular app to React and TypeScript, enhancing performance, usability, and maintainability.`
+    description: `Built a serverless email notification system with Node.js and Amazon SES for scalable automation. Improved reliability and user experience by redesigning Yum! Brands’ password reset workflow for tens of thousands of employees. Migrated a legacy Angular app to React and TypeScript, enhancing performance, usability, and maintainability.`,
   },
   {
-    date: 'Jun 2019 - Jan 2022',
+    date: "Jun 2019 - Jan 2022",
     title: "Full Stack Developer",
     place: "Industrial Info Resources",
-    description: `Automated client product updates with an Excel-to-CSV parser, reducing manual work from 6 hours to under 30 minutes. Independently built a CMS using the MERN stack, empowering analysts to efficiently manage content and products`
-  }
+    description: `Automated client product updates with an Excel-to-CSV parser, reducing manual work from 6 hours to under 30 minutes. Independently built a CMS using the MERN stack, empowering analysts to efficiently manage content and products`,
+  },
 ];
 ---
 
@@ -31,8 +31,8 @@ const experience = [
       {
         experience.map((e, i) => {
           const isEven = i % 2 == 0;
-          const timeLineLocation = isEven ? 'end' : 'start';
-          const textLocation = isEven ? '' : 'md:text-end';
+          const timeLineLocation = isEven ? "end" : "start";
+          const textLocation = isEven ? "" : "md:text-end";
           return (
             <li>
               <div class="timeline-middle">
@@ -49,12 +49,14 @@ const experience = [
                   />
                 </svg>
               </div>
-              <div class={`timeline-${timeLineLocation} timeline-box mb-10 ${textLocation} `}>
+              <div
+                class={`timeline-${timeLineLocation} timeline-box mb-10 ${textLocation} text-[16px]`}
+              >
                 <time class="font-mono italic">{e.date}</time>
                 <div class="text-lg font-black">
                   {e.title} - {e.place}
                 </div>
-                {e.description}
+                <p>{e.description}</p>
               </div>
               <hr />
             </li>
